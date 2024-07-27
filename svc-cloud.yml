@@ -1,15 +1,11 @@
-# 2022 version
 apiVersion: v1
 kind: Service
 metadata:
-  name: cloud-lb
+  name: colud-lb
 spec:
   type: LoadBalancer
-  ports:
-  - port: 80
-    targetPort: 8080
+  ports: 
+    - port: 80
+      targetPort: 8080
   selector:
     project: qsk-book
-
-
-

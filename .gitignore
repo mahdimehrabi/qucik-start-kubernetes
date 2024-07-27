@@ -1,0 +1,111 @@
+# Ignore Mac system files
+.DS_Store
+
+# Ignore node_modules directory (if using Node.js)
+node_modules/
+
+# Ignore Python bytecode files
+*.pyc
+__pycache__/
+
+# Ignore Java build directories (if using Java)
+target/
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore environment variable files
+.env
+.env.local
+.env.*.local
+
+# Ignore Kubernetes config and cache
+.kube/config
+.kube/cache/
+.kube/http-cache/
+
+# Ignore Helm files (if using Helm)
+charts/
+*.tgz
+helm-release.yaml
+values.yaml
+secrets.yaml
+
+# Ignore Kubernetes deployment artifacts
+*.out
+*.log
+*.tmp
+
+# Ignore Terraform state files (if using Terraform with Kubernetes)
+*.tfstate
+*.tfstate.backup
+
+# Ignore Ansible temporary files (if using Ansible with Kubernetes)
+*.retry
+
+# Ignore editor specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Ignore OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore local dev tools files
+coverage/
+*.iml
+*.ipr
+*.iws
+
+# Ignore personal IntelliJ IDEA config files
+.idea/
+
+# Ignore compiled shared libraries
+*.so
+
+# Ignore compiled Dynamic libraries on macOS
+*.dylib
+
+# Ignore compiled object files
+*.o
+*.obj
+
+# Ignore Kubernetes secrets (example pattern)
+secrets/*.yaml
+
+# Optional: Ignore all YAML files in manifests directory, except main manifest files
+# Uncomment the following lines if you want to ignore all YAML files in the `manifests/` directory,
+# but keep specific important files (e.g., main deployment files).
+# manifests/*
+# !manifests/deployment.yaml
+# !manifests/service.yaml
+
+# Ignore temporary files created by editors
+*.bak
+*.swp
+
+# Ignore temporary files created by IDEs
+*.idea/
+*.vscode/
+
+# Ignore compiled Go binaries (if using Go)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Ignore npm package-lock file (if using npm)
+package-lock.json
+
+# Ignore Yarn lock file (if using Yarn)
+yarn.lock
+
+# Ignore output from tools like kustomize (if using Kustomize)
+kustomize_output.yaml
+

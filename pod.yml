@@ -1,13 +1,12 @@
-# 2022 version
 apiVersion: v1
 kind: Pod
 metadata:
   name: first-pod
-  labels:
+  labels: 
     project: qsk-book
 spec:
   containers:
-    - name: web-ctr
-      image: nigelpoulton/qsk-book:latest
+    - name: qsk-book
+      image: mahdimehrabi/qsk-book:v1
       ports:
         - containerPort: 8080
